@@ -1,7 +1,7 @@
 //start of get request to retrieve available coffees
 
 const getInventory = async () => {
-  let results = await axios.get('/api/cloud/getCoffee');
+  let emailUrl = "https://faas-blr1-8177d592.doserverless.co/api/v1/web/fn-affa240d-cb2d-4b4e-83cf-bc2106647cb1/cloud/postEmail" + "?email=" + email;
 results.data.forEach(item => {
   let pic = item.pic;
   let name = item.name;
@@ -73,7 +73,7 @@ const cartHandler = function() {
 let subscribeButton = document.getElementById("subscribe");
 const subscribeHandler = async function() {
   let email = document.getElementById("email").value
-  let emailUrl = "/api/cloud/postEmail" + "?email=" + email;
+  let emailUrl = "https://faas-blr1-8177d592.doserverless.co/api/v1/web/fn-affa240d-cb2d-4b4e-83cf-bc2106647cb1/cloud/postEmail" + "?email=" + email;
   await axios.post(emailUrl);
   localStorage.setItem("subscribe", email);
   document.getElementById("email").value = '';
