@@ -1,23 +1,15 @@
 {
-  "name": "serverless-jamstack",
+  "name": "serverless-jamstack-demo",
   "version": "1.0.0",
-  "description": "> ⚠️ **This repository is archived and kept for reference purposes only.**   > It is no longer maintained and will not receive updates or support.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iam-krishnavamsi/serverless-jamstack.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/iam-krishnavamsi/serverless-jamstack/issues"
-  },
-  "homepage": "https://github.com/iam-krishnavamsi/serverless-jamstack#readme",
   "dependencies": {
     "mongodb": "^6.20.0"
   }

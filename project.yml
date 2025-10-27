@@ -2,12 +2,15 @@ packages:
   - name: cloud
     actions:
       - name: getCoffee
-        limits: 
+        runtime: nodejs:18
+        limits:
           timeout: 5000
           memory: 256
       - name: postEmail
-        limits: 
+        runtime: nodejs:18
+        limits:
           timeout: 5000
           memory: 256
 environment:
   DATABASE_URL: ${DATABASE_URL}
+
